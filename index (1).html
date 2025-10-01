@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML - Guía Práctica</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculación con styles.css -->
+</head>
+<body>
+    <header>
+        <h1>Guía Práctica de Etiquetas HTML</h1>
+        <p>En esta página explicaremos el uso de etiquetas HTML básicas y avanzadas con ejemplos prácticos.</p>
+    </header>
+
+    <main>
+        <!-- Sección de etiquetas básicas -->
+        <section>
+            <h2>Etiquetas Básicas</h2>
+            <article>
+                <h3>&lt;html&gt;</h3>
+                <p>Define el documento HTML y contiene todas las demás etiquetas. Es el contenedor raíz.</p>
+                <p><strong>Ejemplo:</strong> <code>&lt;html lang="es"&gt; ... &lt;/html&gt;</code></p>
+            </article>
+            <article>
+                <h3>&lt;head&gt;</h3>
+                <p>Contiene metadatos, como el título y enlaces a estilos. No se muestra en la página.</p>
+                <p><strong>Ejemplo:</strong> <code>&lt;head&gt;&lt;title&gt;Título&lt;/title&gt;&lt;/head&gt;</code></p>
+            </article>
+            <article>
+                <h3>&lt;body&gt;</h3>
+                <p>Contiene el contenido visible de la página, como textos, imágenes y enlaces.</p>
+                <p><strong>Ejemplo:</strong> <code>&lt;body&gt;&lt;p&gt;Hola&lt;/p&gt;&lt;/body&gt;</code></p>
+            </article>
+            <article>
+                <h3>&lt;h1&gt;</h3>
+                <p>Define un encabezado de nivel 1 (el más importante).</p>
+                <p><strong>Ejemplo:</strong></p>
+                <h1>Este es un encabezado</h1>
+            </article>
+            <article>
+                <h3>&lt;p&gt;</h3>
+                <p>Representa un párrafo de texto.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <p>Este es un párrafo de ejemplo.</p>
+            </article>
+            <article>
+                <h3>&lt;a&gt;</h3>
+                <p>Crea un enlace hipertexto a otra página o recurso.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <a href="https://www.w3schools.com">Visita W3Schools</a>
+            </article>
+            <article>
+                <h3>&lt;img&gt;</h3>
+                <p>Inserta una imagen en la página. Requiere el atributo <code>src</code>.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo">
+            </article>
+            <article>
+                <h3>&lt;ul&gt;</h3>
+                <p>Crea una lista desordenada (con viñetas).</p>
+                <p><strong>Ejemplo:</strong></p>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                </ul>
+            </article>
+            <article>
+                <h3>&lt;ol&gt;</h3>
+                <p>Crea una lista ordenada (numerada).</p>
+                <p><strong>Ejemplo:</strong></p>
+                <ol>
+                    <li>Paso 1</li>
+                    <li>Paso 2</li>
+                </ol>
+            </article>
+            <article>
+                <h3>&lt;table&gt;</h3>
+                <p>Define una tabla para mostrar datos estructurados.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <table>
+                    <tr>
+                        <th>Encabezado 1</th>
+                        <th>Encabezado 2</th>
+                    </tr>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <!-- Sección de etiquetas nuevas -->
+        <section>
+            <h2>Etiquetas Nuevas</h2>
+            <article>
+                <h3>&lt;video&gt;</h3>
+                <p>Inserta un video en la página. Soporta formatos como MP4.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </article>
+            <article>
+                <h3>&lt;audio&gt;</h3>
+                <p>Inserta un archivo de audio, como MP3.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio.
+                </audio>
+            </article>
+            <article>
+                <h3>&lt;canvas&gt;</h3>
+                <p>Crea un área para dibujar gráficos dinámicos con JavaScript.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <canvas id="myCanvas" width="200" height="100"></canvas>
+                <script>
+                    var canvas = document.getElementById("myCanvas");
+                    var ctx = canvas.getContext("2d");
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(50, 20, 100, 60);
+                </script>
+            </article>
+            <article>
+                <h3>&lt;figure&gt;</h3>
+                <p>Contiene contenido multimedia (como imágenes) con una leyenda opcional.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <figure>
+                    <img src="https://via.placeholder.com/150" alt="Figura de ejemplo">
+                    <figcaption>Esta es una imagen de ejemplo.</figcaption>
+                </figure>
+            </article>
+            <article>
+                <h3>&lt;figcaption&gt;</h3>
+                <p>Proporciona una leyenda para un elemento <code>&lt;figure&gt;</code>.</p>
+                <p><strong>Ejemplo:</strong> (Ver arriba en <code>&lt;figure&gt;</code>)</p>
+            </article>
+            <article>
+                <h3>&lt;progress&gt;</h3>
+                <p>Muestra una barra de progreso para tareas completadas.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <progress value="70" max="100"></progress>
+                <p>70% completado</p>
+            </article>
+            <article>
+                <h3>&lt;meter&gt;</h3>
+                <p>Representa un valor dentro de un rango, como un medidor.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <meter value="0.6" min="0" max="1">60%</meter>
+                <p>60% de capacidad</p>
+            </article>
+            <article>
+                <h3>&lt;details&gt;</h3>
+                <p>Crea un elemento desplegable que muestra contenido adicional al hacer clic.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <details>
+                    <summary>Haz clic para ver más</summary>
+                    <p>Este es un contenido oculto que se muestra al hacer clic.</p>
+                </details>
+            </article>
+            <article>
+                <h3>&lt;summary&gt;</h3>
+                <p>Define el título visible de un elemento <code>&lt;details&gt;</code>.</p>
+                <p><strong>Ejemplo:</strong> (Ver arriba en <code>&lt;details&gt;</code>)</p>
+            </article>
+            <article>
+                <h3>&lt;mark&gt;</h3>
+                <p>Resalta texto para darle énfasis visual.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <p>Este es un texto con una <mark>palabra resaltada</mark>.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto creado por [Tu Nombre] - 2025</p>
+    </footer>
+</body>
+</html>
